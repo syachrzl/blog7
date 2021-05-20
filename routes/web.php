@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-Route::get('katalog', 'KatalogKamar');
+Route::get('katalog', 'KamarController@index');
