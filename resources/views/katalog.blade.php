@@ -5,11 +5,13 @@
 @section('content')
 <div class="container">
     <h1><center>Data Kota</center></h1>
-    <ul><p>Nama Kota</p>
-        @foreach ($nama as $item)
-            <li>{{$item->nama}}</li>
-        @endforeach
-        
+    @foreach ($nama as $item)
+    <ul>
+            <li>Nama Kota : {{$item->nama}}</li>
+            <li>Nama Negara : {{$item->negaranya->nama ?? null}}</li>
+            <li>Kode Telefon : {{$item->negaranya->kode_telepon ?? null}}</li>
+            <li>Mata Uang : {{$item->negaranya->mata_uang ?? null}}</li>
     </ul>
+    @endforeach
 </div>
 @endsection

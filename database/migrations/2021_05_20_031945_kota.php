@@ -21,6 +21,8 @@ class Kota extends Migration
             $table->decimal('lat', 10, 7)->nullable();
             $table->decimal('lon', 10, 7)->nullable();
             $table->timestamps();
+
+            $table->foreign('negara_id')->references('id')->on('negara');
         });
     }
 
