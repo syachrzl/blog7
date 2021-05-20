@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('bacadata');
+    return view('homepage');
 });
+
+Route::get('katalog', 'KatalogKamar');
