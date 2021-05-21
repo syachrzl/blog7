@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('katalog', 'KamarController@index');
+
+Route::get('desa', 'KamarController@desa');

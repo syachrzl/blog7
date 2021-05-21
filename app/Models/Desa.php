@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Kota extends Model
+class Desa extends Model
 {
     protected $primaryKey = 'id';
-    public $table = 'kota';
+    public $table = 'desa';
     protected $guarded = [];
 
-    public function negaranya()
+    public function kotanya()
     {
-        return $this->hasOne(Negara::class, 'id', 'negara_id');
+        return $this->hasOne(Kota::class, 'id', 'id_kota');
     }
 }

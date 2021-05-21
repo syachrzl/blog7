@@ -10,7 +10,10 @@
           <a class="nav-link{{request()->is('/') ? ' active' : ''}}" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link{{request()->is('katalog') ? ' active' : ''}}" href="katalog">Katalog Kamar</a>
+          <a class="nav-link{{request()->is('katalog') ? ' active' : ''}}" href="katalog">Informasi Kota</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{{request()->is('desa') ? ' active' : ''}}" href="desa">Infomasi Desa</a>
         </li>
       </ul>
       <form class="d-flex">
