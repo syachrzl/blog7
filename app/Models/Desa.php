@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Desa extends Model
 {
-    protected $primaryKey = 'id';
+    // protected $primaryKey = 'id';
     public $table = 'desa';
-    protected $guarded = [];
+    // protected $guarded = [];
 
     public function kotanya()
     {

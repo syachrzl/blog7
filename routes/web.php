@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-Route::get('katalog', 'KamarController@index');
+Route::get('kotapage', 'KamarController@index');
 
-Route::get('desa', 'KamarController@desa');
+Route::get('desapage', 'KamarController@desa');

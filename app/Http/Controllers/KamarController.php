@@ -11,12 +11,12 @@ class KamarController extends Controller
     public function index()
     {
         $nama = Kota::all();
-        return view('katalog', compact('nama'));
+        return view('kotapage', compact('nama'));
     }
 
     public function desa()
     {
         $nama = Desa::all();
-        return view('desa', compact('nama'));
+        return view('desapage', compact('nama'));
     }
 }
