@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class KamarController extends Controller
 {
-    public function index()
+    public function kota()
     {
         $nama = Kota::all();
         return view('kotapage', compact('nama'));
