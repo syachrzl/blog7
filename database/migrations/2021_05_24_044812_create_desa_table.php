@@ -20,10 +20,9 @@ class CreateDesaTable extends Migration
             $table->integer('luas')->nullable();
             $table->timestamps();
 
-            $table->foreign('id_kota')->references('id')->on('desa');
+            // $table->foreign('id_kota')->references('id')->on('desa');
         });
     }
-
     /**
      * Reverse the migrations.
      *

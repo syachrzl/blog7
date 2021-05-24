@@ -22,7 +22,7 @@ class CreateKotaTable extends Migration
             $table->decimal('lon', 10, 7)->nullable();
             $table->timestamps();
 
-            $table->foreign('negara_id')->references('id')->on('negara');
+            // $table->foreign('negara_id')->references('id')->on('negara');
         });
     }
 
