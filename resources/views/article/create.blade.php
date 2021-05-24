@@ -29,13 +29,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Judul Artikel:</strong>
-                <input type="text" name="nama" class="form-control" placeholder="Isi Judul">
+                <input type="text" name="judul" class="form-control" placeholder="Isi Judul">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Isi Artikel:</strong>
-                <textarea class="form-control" style="height:150px" name="alamat" placeholder="Isi Artikel"></textarea>
+                <textarea class="form-control" style="height:150px" name="isi_article" placeholder="Isi Artikel"></textarea>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
@@ -48,6 +48,5 @@
             </div>
         </div>
     </div>
-   
 </form>
 @endsection

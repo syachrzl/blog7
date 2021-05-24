@@ -30,13 +30,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Judul:</strong>
-                    <input type="text" name="nama" value="{{ $article->judul }}" class="form-control" placeholder="Judul Artikel">
+                    <input type="text" name="judul" value="{{ $article->judul }}" class="form-control" placeholder="Judul Artikel">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail Artikel">{{ $article->isi_article }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="isi_article" placeholder="Detail Artikel">{{ $article->isi_article }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
