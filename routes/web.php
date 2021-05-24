@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('homepage');
 });
-
 Route::get('kotapage', 'KamarController@kota');
-
 Route::get('desapage', 'KamarController@desa');
+Route::resource('article', 'ArticleController');

@@ -15,6 +15,9 @@
         <li class="nav-item">
           <a class="nav-link{{request()->is('desapage') ? ' active' : ''}}" href="desapage">Infomasi Desa</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link{{request()->is('article') ? ' active' : ''}}" href="article">Artikel</a>
+        </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
