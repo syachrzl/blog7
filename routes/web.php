@@ -17,5 +17,9 @@ Route::get('/', function () {
     return view('homepage');
 });
 Route::get('kotapage', 'KamarController@kota');
+
 Route::get('desapage', 'KamarController@desa');
+
+Route::get('negarapage', 'KamarController@negara');
+
 Route::resource('article', 'ArticleController');

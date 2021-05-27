@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kota;
 use App\Models\Desa;
+use App\Models\Negara;
 use Illuminate\Http\Request;
 
 class KamarController extends Controller
@@ -18,5 +19,15 @@ class KamarController extends Controller
     {
         $nama = Desa::all();
         return view('desapage', compact('nama'));
+    }
+
+    public function negara()
+    {
+        $nama = Negara::all();
+        return view('negarapage', compact('nama'));
+    }
+
+    public function store()
+    {
     }
 }
