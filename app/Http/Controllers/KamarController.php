@@ -27,7 +27,8 @@ class KamarController extends Controller
         return view('negarapage', compact('nama'));
     }
 
-    public function store()
+    public function tambahnegara()
     {
+        return view('tambahnegara');
     }
 }

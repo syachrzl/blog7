@@ -21,5 +21,7 @@ Route::get('kotapage', 'KamarController@kota');
 Route::get('desapage', 'KamarController@desa');
 
 Route::get('negarapage', 'KamarController@negara');
+Route::get('negarapage/tambah', 'KamarController@tambahnegara');
+Route::get('negarapage/store', 'KamarController@store');
 
 Route::resource('article', 'ArticleController');
