@@ -5,12 +5,18 @@
 @section('content')
 <div class="container">
     <h1><center>Data Desa</center></h1>
+    <table class="table table-bordered">
+        <tr>
+            <th>Nama Desa</th>
+            <th>Nama Kota</th>
+            <th>Luas M2</th>
+        </tr>
     @foreach ($nama as $item)
-    <ul>
-            <li>Nama Desa : {{$item->nama}}</li>
-            <li>Nama Kota : {{$item->kotanya->nama?? null}}</li>
-            <li>Luas : {{$item->luas ?? null}}</li>
-    </ul>
+    <tr>
+            <td>{{$item->nama}}</td>
+            <td>{{$item->kotanya->nama?? null}}</td>
+            <td>{{$item->luas ?? null}}</td>
+    </tr>
     @endforeach
 </div>
 @endsection
