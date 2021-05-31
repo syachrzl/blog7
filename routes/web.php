@@ -23,5 +23,8 @@ Route::get('desapage', 'KamarController@desa');
 Route::get('negarapage', 'KamarController@negara');
 Route::get('negarapage/create', 'KamarController@create');
 Route::post('negarapage', 'KamarController@store');
+Route::get('negarapage/{id}/edit', 'KamarController@edit');
+Route::patch('negarapage/{id}', 'KamarController@update');
+Route::delete('negarapage/{id}', 'KamarController@destroy');
 
 Route::resource('article', 'ArticleController');

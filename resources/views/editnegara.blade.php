@@ -6,37 +6,38 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <center><h2>Tambah Negara</h2></center>
+            <center><h2>Edit Negara</h2></center>
         </div>
     </div>
 </div>  
 
-<form action="{{url("negarapage")}}" method="POST">
+<form action="{{url("negarapage/{$negara->id}")}}" method="POST">
+    @method('PATCH')
     @csrf
   
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Nama Negara:</strong>
-                <input type="text" name="nama" class="form-control" placeholder="Isi Nama Negara">
+                <input value="{{$negara->nama}}" type="text" name="nama" class="form-control" placeholder="Isi Nama Negara">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>English Name:</strong>
-                <input type="text" name="nama_inggris" class="form-control" placeholder="Input English Name">
+                <input value="{{$negara->nama_inggris}}" type="text" name="nama_inggris" class="form-control" placeholder="Input English Name">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Nama Mata Uang:</strong>
-                <input type="text" name="mata_uang" class="form-control" placeholder="Isi Mata Uang">
+                <input value="{{$negara->mata_uang}}" type="text" name="mata_uang" class="form-control" placeholder="Isi Mata Uang">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Kode Telepon:</strong>
-                <input type="text" name="kode_telepon" class="form-control" placeholder="Isi Kode Telepon">
+                <input value="{{$negara->kode_telepon}}" type="text" name="kode_telepon" class="form-control" placeholder="Isi Kode Telepon">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

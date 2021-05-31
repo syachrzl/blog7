@@ -44,4 +44,28 @@ class KamarController extends Controller
         //Bedanya redirect dan view apa ya?
         return redirect('negarapage');
     }
+
+    public function edit($id)
+    {
+        $negara = Negara::find($id);
+        return view('editnegara', compact('negara'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $negara = Negara::find($id);
+        $negara->nama = $request->input('nama');
+        $negara->nama_inggris = $request->input('nama_inggris');
+        $negara->kode_telepon = $request->input('kode_telepon');
+        $negara->mata_uang = $request->input('mata_uang');
+        $negara->save();
+        return redirect('negarapage');
+    }
+
+    public function destroy($id)
+    {
+        $negara = Negara::find($id);
+        $negara->delete();
+        return redirect('negarapage');
+    }
 }
