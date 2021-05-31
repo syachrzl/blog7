@@ -11,7 +11,7 @@
     </div>
 </div>  
 
-<form action="{{ route('negarapage.store') }}" method="POST">
+<form action="{{url('negarapage')}}" method="POST">
     @csrf
   
      <div class="row">
@@ -42,10 +42,10 @@
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
             <div class="btn">
                 <button type="submit" class="btn btn-success">Simpan</button> 
-                <button type="reset" class="btn btn-danger">Hapus</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
              </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('negarapage') }}"> Kembali</a>
+                <a class="btn btn-primary" href="{{url('negarapage')}}"> Kembali</a>
             </div>
         </div>
     </div>

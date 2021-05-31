@@ -27,8 +27,21 @@ class KamarController extends Controller
         return view('negarapage', compact('nama'));
     }
 
-    public function tambahnegara()
+    public function create()
     {
         return view('tambahnegara');
+    }
+
+    public function store(Request $request)
+    {
+        $negara = new Negara([
+            'nama' => $request->input('nama'),
+            'nama_inggris' => $request->input('nama_inggris'),
+            'kode_telepon' => $request->input('kode_telepon'),
+            'mata_uang' => $request->input('mata_uang'),
+        ]);
+        $negara->save();
+        //Bedanya redirect dan view apa ya?
+        return redirect('negarapage');
     }
 }

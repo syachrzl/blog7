@@ -5,6 +5,7 @@
 @section('content')
 <div class="container">
     <h1><center>Data Negara</center></h1>
+    <a href="{{url('negarapage/create')}}" class="btn btn-success mb-1">Tambah Baru</a>
     <table class="table table-bordered">
         <tr>
             <th>Nama Negara</th>
@@ -20,16 +21,9 @@
         <td>{{$item->kode_telepon}}</td>
         <td>{{$item->mata_uang}}</td>
         <td>
-                <form action="" method="POST">
-    
+                <form action="" method="POST">    
                 <a class="btn btn-secondary" href="">Tampil</a>
-
                 <a class="btn btn-primary" href="">Edit</a>
-
-                @csrf
-                @method('DELETE')
-
-                <button type="submit" class="btn btn-danger">Hapus</button>
                 </form>
         </td>
     </tr>
