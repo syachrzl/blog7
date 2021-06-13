@@ -13,18 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//---Home Page
 Route::get('/', function () {
     return view('homepage');
 });
-Route::get('kotapage', 'KamarController@kota');
+Route::get('kotapage', 'KotaController@kota');
 
-Route::get('desapage', 'KamarController@desa');
+Route::get('desapage', 'DesaController@desa');
 
-Route::get('negarapage', 'KamarController@negara');
-Route::get('negarapage/create', 'KamarController@create');
-Route::post('negarapage', 'KamarController@store');
-Route::get('negarapage/{id}/edit', 'KamarController@edit');
-Route::patch('negarapage/{id}', 'KamarController@update');
-Route::delete('negarapage/{id}', 'KamarController@destroy');
+Route::get('negarapage', 'NegaraController@negara');
+Route::get('negarapage/create', 'NegaraController@create');
+Route::post('negarapage', 'NegaraController@store');
+Route::get('negarapage/{id}/edit', 'NegaraController@edit');
+Route::patch('negarapage/{id}', 'NegaraController@update');
+Route::delete('negarapage/{id}', 'NegaraController@destroy');
 
 Route::resource('article', 'ArticleController');
